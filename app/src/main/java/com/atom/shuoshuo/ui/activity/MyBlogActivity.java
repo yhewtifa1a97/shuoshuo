@@ -19,23 +19,22 @@ import com.atom.shuoshuo.base.AbsBaseActivity;
  * version:: V1.0
  * ============================================================
  **/
-public class AboutMeActivity extends AbsBaseActivity {
+public class MyBlogActivity extends AbsBaseActivity {
 
     public static void startActivity(Context context) {
-        Intent intent = new Intent(context, AboutMeActivity.class);
+        Intent intent = new Intent(context, MyBlogActivity.class);
         context.startActivity(intent);
     }
 
 
     @Override
     protected int getResLayoutId() {
-        return R.layout.activity_about;
+        return R.layout.activity_blog;
     }
 
     @Override
     protected void initViews(Bundle savedInstanceState) {
 
     }
-
 
 }

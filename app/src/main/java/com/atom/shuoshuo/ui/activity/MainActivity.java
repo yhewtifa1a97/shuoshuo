@@ -66,19 +66,16 @@ public class MainActivity extends AbsBaseActivity {
     private void selectDrawerItem(MenuItem item) {
         item.setChecked(true);
         switch (item.getItemId()) {
-            case R.id.nav_clean:
-                cleanCache();
+            case R.id.nav_blog:
+                MyBlogActivity.startActivity(this);
+                mRootDl.closeDrawers();
                 break;
 
-            case R.id.nav_setting:
+            case R.id.nav_about:
                 AboutMeActivity.startActivity(this);
                 mRootDl.closeDrawers();
                 break;
         }
-    }
-
-    private void cleanCache() {
-
     }
 
     private long exitTime;
