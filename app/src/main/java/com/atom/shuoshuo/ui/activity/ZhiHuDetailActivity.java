@@ -71,6 +71,12 @@ public class ZhiHuDetailActivity extends AbsBaseActivity implements ZhihuDetailC
     protected void initViews(Bundle savedInstanceState) {
         setSupportActionBar(mToolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         ViewCompat.setTransitionName(mZhihuDetailIv, TRANSIT_PIC);
         initWebView();
@@ -151,6 +157,7 @@ public class ZhiHuDetailActivity extends AbsBaseActivity implements ZhihuDetailC
                     .into(mZhihuDetailIv);
             mToolbar.setTitle(story.getTitle());
         } else {
+            assert story != null;
             mZhihuDetailWebview.loadUrl(story.getShare_url());
             Glide.with(this).load(R.drawable.ic_error_black_24dp).into(mZhihuDetailIv);
         }
