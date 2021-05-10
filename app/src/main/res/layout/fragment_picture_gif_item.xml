@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fragment_picture_gifview"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/fragment_picture_gifview_tv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="GIF"
+        android:gravity="center"
+        android:background="@drawable/oval_shape"
+        android:layout_centerInParent="true"/>
+
+    <ProgressBar
+        android:id="@+id/fragment_picture_gifview_pb"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:progress="30"
+        android:layout_alignParentTop="true"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">说说</string>
+
+    <string name="zhihu" translatable="false">日报</string>
+    <string name="picture" translatable="false">图片</string>
+    <string name="meizi" translatable="false">妹子</string>
+    <string name="video" translatable="false">视频</string>
+    <string name="qiubai" translatable="false">糗百</string>
+    <string name="duanzi" translatable="false">段子</string>
+
+    <string name="reload">重新加载</string>
+
+    <string name="noNetwork">无网络！</string>
+
+    <string name="loaderror">加载出错！</string>
+
+    <string name="click_pic">点击查看长图</string>
+
+    <string name="picture_conut">%1$d/%2$d</string>
+
+    <string-array name="titles">
+        <item>@string/zhihu</item>
+        <item>@string/picture</item>
+        <item>@string/meizi</item>
+        <item>@string/video</item>
+        <item>@string/qiubai</item>
+        <item>@string/duanzi</item>
+    </string-array>
+
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+</resources>

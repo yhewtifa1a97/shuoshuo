@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/colorPrimary"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp">
+
+        <com.atom.shuoshuo.widget.CircleImageView
+            android:id="@+id/avatar"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:border_color="@color/white"
+            app:border_width="1dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/avatar"/>
+
+        <TextView
+            android:layout_toRightOf="@id/avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:text="Atom"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="www.aiwuol.com"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="天道酬勤，无欲则刚"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+</LinearLayout>

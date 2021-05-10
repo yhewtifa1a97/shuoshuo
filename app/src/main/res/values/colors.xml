@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="meizibg">#faf1f1f1</color>
+    <color name="white">#FFFFFF</color>
+    <color name="font_normal_77">#777777</color>
+    <color name="font_normal_33">#333333</color>
+    <color name="font_normal">#555555</color>
+    <color name="mid_grey">#F4F4F4F4</color>
+
+    <color name="black_99">#99000000</color>
+
+</resources>

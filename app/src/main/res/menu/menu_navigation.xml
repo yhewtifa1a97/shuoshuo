@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/nav_clean"
+            android:checkable="false"
+            android:title="清除缓存"
+            android:icon="@drawable/ic_cached_black_24dp"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:checkable="false"
+            android:title="设置帮助"
+            android:icon="@drawable/ic_settings_black_24dp"/>
+    </group>
+</menu>

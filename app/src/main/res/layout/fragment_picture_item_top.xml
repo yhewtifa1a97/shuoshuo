@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/picture_item_user_avatar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_image_black_24dp"/>
+
+        <TextView
+            android:id="@+id/picture_item_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="不卑不亢"
+            android:textColor="@color/font_normal"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <com.atom.shuoshuo.utils.SpacingTextView
+        android:id="@+id/picture_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="2dp"
+        android:text="青铜垃圾号"
+        android:textColor="@color/font_normal_33"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/picture_item_category_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_shape"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:text="搞笑囧图"
+        android:textSize="14sp"/>
+</merge>

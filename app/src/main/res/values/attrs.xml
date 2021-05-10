@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+        <attr name="border_overlay" format="boolean"/>
+    </declare-styleable>
+
+    <!--NineGridImageView-->
+    <declare-styleable name="NineGridImageView">
+        <attr format="dimension" name="singleImgSize"/>
+        <attr format="dimension" name="imgGap"/>
+        <attr format="integer" name="maxSize"/>
+        <attr format="enum" name="showStyle">
+            <enum name="grid" value="0"/>
+            <enum name="fill" value="1"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- TextDrawable -->
+    <declare-styleable name="TextDrawable">
+        <attr name="leftDrawable" format="reference"/>
+        <attr name="leftDrawableWidth" format="dimension"/>
+        <attr name="leftDrawableHeight" format="dimension"/>
+        <attr name="rightDrawable" format="reference"/>
+        <attr name="rightDrawableWidth"   format="dimension"/>
+        <attr name="rightDrawableHeight" format="dimension"/>
+        <attr name="topDrawable" format="reference"/>
+        <attr name="topDrawableWidth" format="dimension"/>
+        <attr name="topDrawableHeight" format="dimension"/>
+    </declare-styleable>
+</resources>
