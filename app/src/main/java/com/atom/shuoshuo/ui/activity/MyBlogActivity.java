@@ -37,7 +37,6 @@ public class MyBlogActivity extends AbsBaseActivity {
         context.startActivity(intent);
     }
 
-
     @Override
     protected int getResLayoutId() {
         return R.layout.activity_blog;
