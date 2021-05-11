@@ -4,7 +4,6 @@ import com.atom.shuoshuo.api.ApiHelper;
 import com.atom.shuoshuo.api.service.QiuBaiService;
 import com.atom.shuoshuo.bean.qiubai.QiuShiBaiKe;
 import com.atom.shuoshuo.contract.QuibaiContract;
-import com.atom.shuoshuo.widget.ZoomImageView;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import java.util.ArrayList;
@@ -32,7 +31,7 @@ public class QiubaiPersenter implements QuibaiContract.IQuibaiPresenter {
     private QuibaiContract.IQuibaiView mIQuibaiView;
     private LifecycleTransformer<QiuShiBaiKe> bind;
 
-    public QiubaiPersenter( QuibaiContract.IQuibaiView mIQuibaiView,LifecycleTransformer bind){
+    public QiubaiPersenter(QuibaiContract.IQuibaiView mIQuibaiView, LifecycleTransformer bind) {
         this.mIQuibaiView = mIQuibaiView;
         this.bind = bind;
     }
@@ -40,7 +39,7 @@ public class QiubaiPersenter implements QuibaiContract.IQuibaiPresenter {
     @Override
     public void getQuibaiData(int page) {
         mIQuibaiView.showProgressBar();
-        ApiHelper.getInstance().getService(QiuBaiService.class,ApiHelper.QIUBAI_BASE_URL)
+        ApiHelper.getInstance().getService(QiuBaiService.class, ApiHelper.QIUBAI_BASE_URL)
                 .getQiuBaiData(page)
                 .compose(bind)
                 .subscribeOn(Schedulers.io())
@@ -48,7 +47,7 @@ public class QiubaiPersenter implements QuibaiContract.IQuibaiPresenter {
                 .subscribe(new Observer<QiuShiBaiKe>() {
                     @Override
                     public void onSubscribe(@NonNull Disposable d) {
-                        
+
                     }
 
                     @Override

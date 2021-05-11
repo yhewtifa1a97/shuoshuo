@@ -37,7 +37,7 @@ public class ZhihuDetailPresenter implements ZhihuDetailContract.IZhihuDetailPre
     @Override
     public void getZhihuDetailData(int id) {
         mIZhihuDetailView.showProgressBar();
-        ApiHelper.getInstance().getService(ZhiHuService.class,ApiHelper.ZHIHU_BASE_URL)
+        ApiHelper.getInstance().getService(ZhiHuService.class, ApiHelper.ZHIHU_BASE_URL)
                 .getZhiHuStory(id)
                 .compose(bind)
                 .subscribeOn(Schedulers.io())

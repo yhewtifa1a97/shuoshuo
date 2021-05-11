@@ -2,14 +2,8 @@ package com.atom.shuoshuo.presenter;
 
 import com.atom.shuoshuo.api.ApiHelper;
 import com.atom.shuoshuo.api.service.GankService;
-import com.atom.shuoshuo.api.service.ZhiHuService;
-import com.atom.shuoshuo.bean.meizi.Meizi;
 import com.atom.shuoshuo.bean.meizi.MeiziList;
-import com.atom.shuoshuo.bean.zhihu.ZhihuDailyNews;
 import com.atom.shuoshuo.contract.MeiziContract;
-import com.atom.shuoshuo.contract.MeiziContract;
-import com.atom.shuoshuo.utils.DateTimeHelper;
-import com.google.gson.Gson;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import io.reactivex.Observer;
@@ -39,7 +33,6 @@ public class MeiziPresenter implements MeiziContract.IMeiziPresenter {
         this.mIMeiziView = mIMeiziView;
         this.bind = bind;
     }
-
 
 
     @Override

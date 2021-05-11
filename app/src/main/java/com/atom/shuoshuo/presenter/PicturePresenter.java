@@ -5,14 +5,9 @@ import android.util.Log;
 import com.atom.shuoshuo.api.ApiHelper;
 import com.atom.shuoshuo.api.RetrofitHelper;
 import com.atom.shuoshuo.api.service.DuanZiService;
-import com.atom.shuoshuo.api.service.ZhiHuService;
 import com.atom.shuoshuo.bean.picture.GsonProvider;
 import com.atom.shuoshuo.bean.picture.PictureBean;
-import com.atom.shuoshuo.bean.zhihu.ZhihuDailyNews;
 import com.atom.shuoshuo.contract.PictrueContract;
-import com.atom.shuoshuo.contract.ZhihuContract;
-import com.atom.shuoshuo.utils.DateTimeHelper;
-import com.google.gson.Gson;
 import com.trello.rxlifecycle2.LifecycleTransformer;
 
 import java.util.ArrayList;
