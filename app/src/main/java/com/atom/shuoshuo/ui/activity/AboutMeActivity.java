@@ -26,7 +26,6 @@ public class AboutMeActivity extends AbsBaseActivity {
         context.startActivity(intent);
     }
 
-
     @Override
     protected int getResLayoutId() {
         return R.layout.activity_about;
@@ -36,6 +35,5 @@ public class AboutMeActivity extends AbsBaseActivity {
     protected void initViews(Bundle savedInstanceState) {
 
     }
-
 
 }
